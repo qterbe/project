@@ -1,0 +1,32 @@
+#приложение
+app = QApplication([])
+app.exec_()
+
+#главное окно
+main_win = QWidget()
+main_win.show()
+
+#настройка главного окна
+main_win.setWindowTitle('Сортировка мусора')
+
+#элементы
+#tipes_sort
+
+
+
+
+#направляющие
+layout_main = QVBoxLayout()
+layoutH1 = QHBoxLayout()
+layoutH2 = QHBoxLayout()
+layoutH3 = QHBoxLayout()
+layoutH1.addWidget(question, alignment = Qt.AlignCenter)
+layoutH2.addWidget(btn_answer1, alignment = Qt.AlignCenter)
+layoutH2.addWidget(btn_answer2, alignment = Qt.AlignCenter)
+layoutH3.addWidget(btn_answer3, alignment = Qt.AlignCenter)
+layoutH3.addWidget(btn_answer4, alignment = Qt.AlignCenter)
+
+layout_main.addLayout(layoutH1)
+layout_main.addLayout(layoutH2)
+layout_main.addLayout(layoutH3)
+main_win.setLayout(layout_main)
